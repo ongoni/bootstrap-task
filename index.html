@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap4-glyphicons/css/bootstrap-glyphicons.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Bootstrap task</title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="navbar navbar-expand navbar-dark navbar-fixed-top bg-dark">
+    <div class="navbar-brand">Control Panel</div>
+    <div class="navbar-collapse"></div>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"> Admin</span>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">My Profile</a>
+        <a class="dropdown-item"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> Logout</a>
+      </div>
+    </div>
+  </div>
+  <div class="content container">
+    <div class="toolbox-dashboard row">
+      <div class="col-12 col-md-4 col-lg-4 toolbox">
+        <div class="block-header border-bottom mb-4 pb-4">
+          <h3><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Toolbox</h3>
+        </div>
+        <ul class="list-unstyled container">
+          <li><a href="#"><span class="glyphicon glyphicon-alert mb-4" aria-hidden="true"></span> Alerts</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-link mb-4" aria-hidden="true"></span> Links</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-random mb-4" aria-hidden="true"></span> Reports</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-book mb-4" aria-hidden="true"></span> Books</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-tag mb-4" aria-hidden="true"></span> Tools</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-record mb-4" aria-hidden="true"></span> Real-time</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-plus mb-4" aria-hidden="true"></span> Advanced..</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-8 col-lg-8 dashboard">
+        <div class="border-bottom mb-4 pb-4 block-header">
+          <h3><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> Dashboard</h3>
+        </div>
+        <div class="border-bottom mb-4 pb-4 dashboard-alert">
+          <div class="alert alert-secondary" role="alert">Inbox Messages
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">3</span>
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header"><h4>Progress Status</h4></div>
+          <div class="card-body">
+            <label>Complete</label>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60"
+                   aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+            <label>In progress</label>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 30%" aria-valuenow="30"
+                   aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+            <label>At risk</label>
+            <div class="progress">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10"
+                   aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-bottom mb-4 pb-4 reports-header row">
+      <h3 class="col-xs-12">
+        <a href=""><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Reports</a>
+      </h3>
+    </div>
+    <div class="row">
+      <div class="col-lg-9 reports-block border-bottom mb-4 pb-4">
+        <table class="table">
+          <thead class="font-weight-bold">
+          <tr>
+            <td>Visits</td>
+            <td>ROI</td>
+            <td>Source</td>
+            <td>Description and notes</td>
+          </tr>
+          </thead>
+          <tr class="table-active">
+            <td>61</td>
+            <td>6.12%</td>
+            <td>Direct</td>
+            <td>
+              Mauris pellentesque congue orci, sit amet luctus arcu. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Donec et rhoncus sem, ultricies luctus nibh. Vivamus a.
+            </td>
+          </tr>
+          <tr>
+            <td>115</td>
+            <td>75%</td>
+            <td>Direct</td>
+            <td>
+              Nulla euismod lorem est, quis luctus lectus ultricies ut. Interdum et malesuada
+              fames ac ante ipsum primis in faucibus. Cras iaculis mattis est quis porta.
+            </td>
+          </tr>
+          <tr class="table-active">
+            <td>42</td>
+            <td>4.1%</td>
+            <td>Referral</td>
+            <td>
+              Nunc ullamcorper dui at orci interdum, ut pulvinar tellus varius. Pellentesque
+              commodo vestibulum tortor vel eleifend. Nunc porta massa a eros mattis, vel euismod nulla.
+            </td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>7%</td>
+            <td>Type</td>
+            <td>
+              Vestibulum at risus sapien. Nulla rhoncus convallis diam. Nam nec accumsan sapien.
+              Nullam ligula arcu, vehicula at nibh a, tincidunt dapibus est. Etiam eu sodales.
+            </td>
+          </tr>
+          <tr class="table-active">
+            <td>15</td>
+            <td>15%</td>
+            <td>Type</td>
+            <td>
+              Ut euismod leo eros, ut sollicitudin velit malesuada non. Integer tristique,
+              ante ac aliquet pretium, odio metus commodo quam, ac iaculis lacus dui at risus.
+            </td>
+          </tr>
+        </table>
+        <div class="card">
+          <div class="card-header">New Requests
+          </div>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item active">Good stuff happened</li>
+              <li class="list-group-item">Good stuff happened</li>
+              <li class="list-group-item">Bad stuff happened</li>
+              <li class="list-group-item">Really bad stuff happened</li>
+            </ul>
+          </div>
+        </div>
+        <div class="alert alert-primary" role="alert">Please remember to logout for classified security.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">x</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <div class="card-header">Submit request
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="inputName">Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="inputPassword">Title</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              </div>
+              <div>
+                <label for="details">Details</label>
+                <textarea class="form-control" rows="3" id="details"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="inputSelect">Select</label>
+                <select class="form-control form-control-lg" id="inputSelect">
+                  <option value="" disabled selected>General question</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">Engagement</div>
+          <div class="card-body d-flex center-block">
+            <img src="resources/1.png" class="rounded-circle">
+            <img src="resources/2.png" class="rounded-circle">
+            <img src="resources/3.png" class="rounded-circle">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center">Somebody once told me that backend is better.
+  </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+</script>
+</body>
+</html>
